@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ფლექსბოქს ლაიაუტი</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f4f7f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      /* ფლექსბოქს კონტეინერის სტილები */
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      /* ფლექსბოქს ელემენტების სტილები */
+      .flex-box {
+        width: 150px;
+        height: 150px;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .flex-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+
+      .flex-box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .flex-box:hover img {
+        opacity: 0.8;
+      }
+
+      /* განსხვავებული ფერები თითოეული კონტეინერისთვის */
+      .flex-container1 .flex-box {
+        background-color: #e74c3c;
+      }
+      .flex-container2 .flex-box {
+        background-color: #27ae60;
+      }
+      .flex-container3 .flex-box {
+        background-color: #f39c12;
+      }
+      .flex-container4 .flex-box {
+        background-color: #3498db;
+      }
+
+      /* ღილაკის სტილები */
+      button {
+        background-color: #2ecc71;
+        color: white;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 30px auto;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #27ae60;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ფეხბურთის გუნდები</h1>
+
+    <!-- პირველი კონტეინერი -->
+    <div class="flex-container flex-container1">
+      <div class="flex-box">
+        <a href="https://www.realmadrid.com/en" target="_blank"
+          ><img src="images/real-madrid.png" alt="Real Madrid"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.fcbarcelona.com/en" target="_blank"
+          ><img src="images/barcelona.png" alt="Barcelona"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.atleticodemadrid.com/en" target="_blank"
+          ><img src="images/atletico-de-madrid.png" alt="Atletico de Madrid"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.valenciacf.com/en" target="_blank"
+          ><img src="images/valencia.png" alt="Valencia"
+        /></a>
+      </div>
+    </div>
+
+    <!-- მეორე კონტეინერი -->
+    <div class="flex-container flex-container2">
+      <div class="flex-box">
+        <a href="https://www.manutd.com/en" target="_blank"
+          ><img src="images/manchester-united.png" alt="Manchester United"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.mancity.com/" target="_blank"
+          ><img src="images/manchester-city.png" alt="Manchester City"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.chelseafc.com/en" target="_blank"
+          ><img src="images/chelsea.png" alt="Chelsea"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.arsenal.com/" target="_blank"
+          ><img src="images/arsenal.png" alt="Arsenal"
+        /></a>
+      </div>
+    </div>
+
+    <!-- მესამე კონტეინერი -->
+    <div class="flex-container flex-container3">
+      <div class="flex-box">
+        <a href="https://www.bayer04.de/en" target="_blank"
+          ><img src="images/bayern-leverkusen.png" alt="Bayern Leverkusen"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://fcbayern.com/en" target="_blank"
+          ><img src="images/bayern-munchen.png" alt="Bayern München"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.bvb.de/eng/" target="_blank"
+          ><img src="images/borusia-dortmund.png" alt="Borussia Dortmund"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.rasenballsport.de/en/" target="_blank"
+          ><img src="images/leipzig.png" alt="RB Leipzig"
+        /></a>
+      </div>
+    </div>
+
+    <!-- მეოთხე კონტეინერი -->
+    <div class="flex-container flex-container4">
+      <div class="flex-box">
+        <a href="https://www.acmilan.com/en" target="_blank"
+          ><img src="images/milan.jpg" alt="AC Milan"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.inter.it/en" target="_blank"
+          ><img src="images/inter.webp" alt="Inter Milan"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.sscnapoli.it/en" target="_blank"
+          ><img src="images/lazio.png" alt="Lazio"
+        /></a>
+      </div>
+      <div class="flex-box">
+        <a href="https://www.sscnapoli.it/en" target="_blank"
+          ><img src="images/napoli.png" alt="Napoli"
+        /></a>
+      </div>
+    </div>
+
+    <!-- ღილაკი რომელიც აკონტროლებს ნავიგაციას -->
+    <button onclick="snapColors()">დაწყება</button>
+
+    <script>
+      let currentStage = 0; // დავიწყოთ პირველი ეტაპიდან
+      const colors = ["#e74c3c", "#27ae60", "#f39c12", "#3498db"]; // ფერები, რომლებიც გამოყენებულია
+      let blocks = []; // მასივი ყველა ელემენტის შენახვისთვის
+
+      // ინიციალიზაცია ელემენტების
+      function initializeBlocks() {
+        const containers = document.querySelectorAll(".flex-container");
+        blocks = Array.from(containers).flatMap((container) =>
+          Array.from(container.querySelectorAll(".flex-box"))
+        );
+      }
+
+      // ელემენტების შეფლობით განახლება
+      function snapColors() {
+        if (currentStage < 0 || currentStage > 4) return; // ვაჩერებთ, თუ შემდგომი ნაბიჯი არ არსებობს
+
+        // მხოლოდ აქტიურ ელემენტებზე მუშაობა
+        const visibleBlocks = blocks.filter(
+          (block) => block.style.display !== "none"
+        );
+
+        if (currentStage === 0) {
+          // ეტაპი 0: ყველა ელემენტის შერყევა და მათ ყველა დარჩენა ჩანს
+          const imageBlocks = visibleBlocks.map((block) =>
+            block.querySelector("img")
+          );
+          const shuffledImages = shuffle(imageBlocks.map((img) => img.src));
+          imageBlocks.forEach((img, index) => {
+            img.src = shuffledImages[index];
+          });
+
+          // ფერების დასაწყისი
+          visibleBlocks.forEach((block, index) => {
+            block.style.backgroundColor = colors[index % colors.length];
+          });
+        } else if (currentStage === 1) {
+          // ეტაპი 1: შერყევა და ნახევარი ელემენტების დამალვა
+          const imageBlocks = visibleBlocks.map((block) =>
+            block.querySelector("img")
+          );
+          const shuffledImages = shuffle(imageBlocks.map((img) => img.src));
+          imageBlocks.forEach((img, index) => {
+            img.src = shuffledImages[index];
+          });
+
+          // ფერების შერყევა
+          const shuffledColors = shuffle([...colors]);
+          visibleBlocks.forEach((block, index) => {
+            block.style.backgroundColor =
+              shuffledColors[index % shuffledColors.length];
+          });
+
+          // ნახევარი ელემენტების დამალვა
+          const blocksToHide = Math.floor(visibleBlocks.length / 2);
+          for (let i = 0; i < blocksToHide; i++) {
+            visibleBlocks[i].style.display = "none";
+          }
+        } else {
+          // ეტაპები 2-4: განაგრძეთ იგივე მოქმედება
+          const shuffledColors = shuffle([...colors]);
+          visibleBlocks.forEach((block, index) => {
+            block.style.backgroundColor =
+              shuffledColors[index % shuffledColors.length];
+          });
+
+          const blocksToHide = Math.floor(visibleBlocks.length / 2);
+          for (let i = 0; i < blocksToHide; i++) {
+            visibleBlocks[i].style.display = "none";
+          }
+        }
+
+        // განახლება ეტაპზე
+        currentStage = (currentStage + 1) % 5; // როცა 4-მდე მივალთ, ისევ დავუბრუნდებით 0-ს
+      }
+
+      // მასივის შერყევის ფუნქცია
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      // ინიციალიზაცია გვერდზე დატვირთვისას
+      initializeBlocks();
+    </script>
+  </body>
+</html>
