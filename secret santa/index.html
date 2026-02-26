@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Santa 🎅</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body style="font-family:sans-serif;max-width:400px;margin:auto;text-align:center;">
+  <h2>🎅 Secret Santa 🎁</h2>
+
+  <input id="nameInput" type="text" placeholder="შეიყვანე შენი სახელი">
+  <button onclick="addPlayer()">დამატება</button>
+
+  <h3>მონაწილეები:</h3>
+  <ul id="playerList"></ul>
+
+  <button onclick="startGame()">🎄 დაწყება</button>
+  <button onclick="resetGame()">♻️ განულება</button>
+
+  <h3>აირჩიეთ თქვენი სახელი:     ვამოწყინებაფუათ გიჩქუდან</h3>
+  <select id="playerSelect"></select>
+  <button onclick="revealSanta()">გახსნა</button>
+
+  <p id="result" style="margin-top:15px;font-weight:bold;"></p>
+
+  <script src="./script.js"></script>
+</body>
+</html>
